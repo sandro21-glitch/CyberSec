@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  background-color:#021327;
+  overflow-x:hidden;
+}
+
+@layer components {
+  .h1 {
+    font-size: 2rem;
+  }
+  .h2 {
+    font-size: 1.6rem;
+  }
+  .h3 {
+    font-size: 1.5rem;
+  }
+  .h4 {
+    font-size: 1.25rem;
+  }
+  .h5 {
+    font-size: 0.875rem;
+  }
+  .h6 {
+      font-size: .7rem;
+  }
+  .p {
+    font-size: .8rem;
+    margin-bottom: 1.25rem;
+    }
+  @media screen and (min-width: 800px) {
+    .h1 {
+      font-size: 3rem;
+      font-weight:600;
+    }
+    .h2 {
+      font-size: 2.5rem;
+      font-weight:600;
+    }
+    .h3 {
+      font-size: 2rem;
+    }
+    .h4 {
+      font-size: 1.5rem;
+    }
+    .h5 {
+      font-size: 1rem;
+    }
+    .h6 {
+      font-size: 1rem;
+    }
+  }
+  .overlay {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #0213272B 0%, #021327 85%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  .overlayAbout {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #021327CC 0%, #021327 60%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.team-overlay {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #02132780 0%, #021327 75%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+  .overlay-second {
+    background-color: #04182F;
+    opacity: 0.7;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  .overlayBg {
+    background-image: linear-gradient(135deg, #44DA64 0%, #616AF9 100%);
+    transition: background ease-in 1s;
+  }
+  .darkOverlay {
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #02132780 0%, #04182F 50%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  .boxShadow {
+    box-shadow: 0px 0px 60px 0px rgba(96.99999999999999, 106.0000000000001, 249, 0.16862745098039217);
+  }
+  .heightTrans {
+    transition:height ease-in .3s;
+  }
+}
